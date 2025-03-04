@@ -9,3 +9,4 @@ node_modules/
 .gitignore
 .idea/
 .vscode/
+learning-playwright/
