@@ -2,13 +2,23 @@
   "name": "learningplaywright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --browser=chromium",
+    "test:firefox": "npx playwright test --browser=firefox",
+    "test:webkit": "npx playwright test --browser=webkit",
+    "test:first": "npx playwright test --grep @first",
+    "test:local": "BASE_URL=http://localhost:4200 npx playwright test",
+    "test:report": "npx playwright test && npx playwright show-report",
+    "test:ui": "npx playwright test --ui"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.50.1",
-    "@types/node": "^22.13.8"
+    "@types/node": "^22.13.8",
+    "dotenv": "^16.4.7"
   }
 }
